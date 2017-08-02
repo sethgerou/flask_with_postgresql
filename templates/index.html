@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Data Collector</title>
+    <link rel="stylesheet" href={{ url_for('static', filename='css/main.css') }}>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Collecting heights</h1>
+      <p>Please enter your email and height</p>
+      <div class="message">
+        {{ text | safe }}
+      </div>
+      <form class="" action="/success" method="POST">
+        <div class="">
+          <input title="Email here" type="email" name="email_name" placeholder="Your Email Here" required>
+        </div>
+        <div class="">
+          <input title="Height here (in inches)" type="number" min="20" max="100" step=".5" name="height_name" placeholder="height here" required>
+        </div>
+        <div class="">
+          <button type="submit">submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
