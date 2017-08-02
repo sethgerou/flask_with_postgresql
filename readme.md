@@ -1,3 +1,8 @@
+# to create database:
+# command line: python
+# from app (script name) import db
+# db.create_all()
+
 heroku create sethheightcollector
 
 heroku addons:create heroku-postgresql:hobby-dev -

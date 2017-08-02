@@ -22,11 +22,6 @@ class Data(db.Model):
         self.email_=email_
         self.height_=height_
 
-# to create database:
-# command line: python
-# from app (script name) import db
-# db.create_all()
-
 @app.route('/')
 def index():
     return render_template("index.html")
