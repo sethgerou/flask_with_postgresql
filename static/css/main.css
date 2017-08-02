@@ -47,3 +47,8 @@ html, body {
   padding: 10px;
   display: inline-block;
 }
+
+a, h1:link a, h1:hover a, h1:active a, h1:visited {
+  color: white;
+  text-decoration: none;
+}
