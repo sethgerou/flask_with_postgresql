@@ -9,7 +9,7 @@ app=Flask(__name__)
 
 app.config['SQLALCHEMY_DATABASE_URI']='postgres://rmmutxreberlfx:decdf1d8ad3c398be9253c97031a34d9d4aef67dc970e64d0fc5e4c160201f77@ec2-107-22-160-199.compute-1.amazonaws.com:5432/dagcqg6ed9jh1n?sslmode=require'
 
-db=SQLAlchemy(app)'
+db=SQLAlchemy(app)
 
 class Data(db.Model):
     __tablename__='data'
